@@ -40,76 +40,78 @@ $financial = $input['financial'];
 
 $sheet->WriteString(1, 1, "Customer", $xml_styles['column_names']);
 $sheet->WriteString(1, 2, "Line: Item", $xml_styles['column_names']);
-$sheet->WriteString(1, 3, "AR account", $xml_styles['column_names']);
-$sheet->WriteString(1, 4, "Billing address: City", $xml_styles['column_names']);
-$sheet->WriteString(1, 5, "Billing address: Country", $xml_styles['column_names']);
-$sheet->WriteString(1, 6, "Billing address: Line 1", $xml_styles['column_names']);
-$sheet->WriteString(1, 7, "Billing address: Line 2", $xml_styles['column_names']);
-$sheet->WriteString(1, 8, "Billing address: Line 3", $xml_styles['column_names']);
-$sheet->WriteString(1, 9, "Billing address: Line 4", $xml_styles['column_names']);
-$sheet->WriteString(1, 10, "Billing address: Line 5", $xml_styles['column_names']);
-$sheet->WriteString(1, 11, "Billing address: Note", $xml_styles['column_names']);
-$sheet->WriteString(1, 12, "Billing address: State", $xml_styles['column_names']);
-$sheet->WriteString(1, 13, "Billing address: Postal code", $xml_styles['column_names']);
-$sheet->WriteString(1, 14, "Class	", $xml_styles['column_names']);
-$sheet->WriteString(1, 15, "Credit Line: Amount", $xml_styles['column_names']);
-$sheet->WriteString(1, 16, "Credit Line: Txn number", $xml_styles['column_names']);
-$sheet->WriteString(1, 17, "Credit Line: Txn type", $xml_styles['column_names']);
-$sheet->WriteString(1, 18, "Currency", $xml_styles['column_names']);
-$sheet->WriteString(1, 19, "Customer message", $xml_styles['column_names']);
-$sheet->WriteString(1, 20, "Discount amount", $xml_styles['column_names']);
-$sheet->WriteString(1, 21, "Discount description", $xml_styles['column_names']);
-$sheet->WriteString(1, 22, "Discount item	", $xml_styles['column_names']);
-$sheet->WriteString(1, 23, "Discount tax code	", $xml_styles['column_names']);
-$sheet->WriteString(1, 24, "Due date	", $xml_styles['column_names']);
-$sheet->WriteString(1, 25, "Email later", $xml_styles['column_names']);
-$sheet->WriteString(1, 26, "Exchange rate	", $xml_styles['column_names']);
-$sheet->WriteString(1, 27, "FOB", $xml_styles['column_names']);
-$sheet->WriteString(1, 28, "Invoice number", $xml_styles['column_names']);
-$sheet->WriteString(1, 29, "Line: Amount", $xml_styles['column_names']);
-$sheet->WriteString(1, 30, "Line: Class", $xml_styles['column_names']);
-$sheet->WriteString(1, 31, "Line: Description	", $xml_styles['column_names']);
-$sheet->WriteString(1, 32, "Line: Inventory bin", $xml_styles['column_names']);
-$sheet->WriteString(1, 33, "Line: Inventory site", $xml_styles['column_names']);
-$sheet->WriteString(1, 34, "Line: Linked SO number", $xml_styles['column_names']);
-$sheet->WriteString(1, 35, "Line: Other 1	", $xml_styles['column_names']);
-$sheet->WriteString(1, 36, "Line: Other 2	", $xml_styles['column_names']);
-$sheet->WriteString(1, 37, "Line: Price", $xml_styles['column_names']);
-$sheet->WriteString(1, 38, "Line: Quantity", $xml_styles['column_names']);
-$sheet->WriteString(1, 39, "Line: Serial/Lot number", $xml_styles['column_names']);
-$sheet->WriteString(1, 40, "Line: Service date", $xml_styles['column_names']);
-$sheet->WriteString(1, 41, "Line: Tax code", $xml_styles['column_names']);
-$sheet->WriteString(1, 42, "Line: U/M	", $xml_styles['column_names']);
-$sheet->WriteString(1, 43, "Linked SO number", $xml_styles['column_names']);
-$sheet->WriteString(1, 44, "Mark as pending", $xml_styles['column_names']);
-$sheet->WriteString(1, 45, "Memo", $xml_styles['column_names']);
-$sheet->WriteString(1, 46, "Other", $xml_styles['column_names']);
-$sheet->WriteString(1, 47, "Print later", $xml_styles['column_names']);
-$sheet->WriteString(1, 48, "PO number	", $xml_styles['column_names']);
-$sheet->WriteString(1, 49, "Sales rep	", $xml_styles['column_names']);
-$sheet->WriteString(1, 50, "Shipping date	", $xml_styles['column_names']);
-$sheet->WriteString(1, 51, "Shipping method", $xml_styles['column_names']);
-$sheet->WriteString(1, 52, "Shipping address: City", $xml_styles['column_names']);
-$sheet->WriteString(1, 53, "Shipping address: Country", $xml_styles['column_names']);
-$sheet->WriteString(1, 54, "Shipping address: Line 1", $xml_styles['column_names']);
-$sheet->WriteString(1, 55, "Shipping address: Line 2", $xml_styles['column_names']);
-$sheet->WriteString(1, 56, "Shipping address: Line 3", $xml_styles['column_names']);
-$sheet->WriteString(1, 57, "Shipping address: Line 4", $xml_styles['column_names']);
-$sheet->WriteString(1, 58, "Shipping address: Line 5", $xml_styles['column_names']);
-$sheet->WriteString(1, 59, "Shipping address: Note", $xml_styles['column_names']);
-$sheet->WriteString(1, 60, "Shipping address: State", $xml_styles['column_names']);
-$sheet->WriteString(1, 61, "Shipping address: Postal code	", $xml_styles['column_names']);
-$sheet->WriteString(1, 62, "Shipping amount", $xml_styles['column_names']);
-$sheet->WriteString(1, 63, "Shipping description", $xml_styles['column_names']);
-$sheet->WriteString(1, 64, "Shipping item	", $xml_styles['column_names']);
-$sheet->WriteString(1, 65, "Shipping tax code	", $xml_styles['column_names']);
-$sheet->WriteString(1, 66, "Tax item", $xml_styles['column_names']);
-$sheet->WriteString(1, 67, "Template", $xml_styles['column_names']);
-$sheet->WriteString(1, 68, "Terms", $xml_styles['column_names']);
-$sheet->WriteString(1, 69, "Transaction date	", $xml_styles['column_names']);
-$sheet->WriteString(1, 70, "Update Invoice", $xml_styles['column_names']);
-
-
+$sheet->WriteString(1, 3, "Memo-End User", $xml_styles['column_names']);
+$sheet->WriteString(1, 4, "AR account", $xml_styles['column_names']);
+$sheet->WriteString(1, 5, "Billing address: City", $xml_styles['column_names']);
+$sheet->WriteString(1, 6, "Billing address: Country", $xml_styles['column_names']);
+$sheet->WriteString(1, 7, "Billing address: Line 1", $xml_styles['column_names']);
+$sheet->WriteString(1, 8, "Billing address: Line 2", $xml_styles['column_names']);
+$sheet->WriteString(1, 9, "Billing address: Line 3", $xml_styles['column_names']);
+$sheet->WriteString(1, 10, "Billing address: Line 4", $xml_styles['column_names']);
+$sheet->WriteString(1, 11, "Billing address: Line 5", $xml_styles['column_names']);
+$sheet->WriteString(1, 12, "Billing address: Note", $xml_styles['column_names']);
+$sheet->WriteString(1, 13, "Billing address: State", $xml_styles['column_names']);
+$sheet->WriteString(1, 14, "Billing address: Postal code", $xml_styles['column_names']);
+$sheet->WriteString(1, 15, "Class	", $xml_styles['column_names']);
+$sheet->WriteString(1, 16, "Credit Line: Amount", $xml_styles['column_names']);
+$sheet->WriteString(1, 17, "Credit Line: Txn number", $xml_styles['column_names']);
+$sheet->WriteString(1, 18, "Credit Line: Txn type", $xml_styles['column_names']);
+$sheet->WriteString(1, 19, "Currency", $xml_styles['column_names']);
+$sheet->WriteString(1, 20, "Customer message", $xml_styles['column_names']);
+$sheet->WriteString(1, 21, "Discount amount", $xml_styles['column_names']);
+$sheet->WriteString(1, 22, "Discount description", $xml_styles['column_names']);
+$sheet->WriteString(1, 23, "Discount item	", $xml_styles['column_names']);
+$sheet->WriteString(1, 24, "Discount tax code	", $xml_styles['column_names']);
+$sheet->WriteString(1, 25, "Due date	", $xml_styles['column_names']);
+$sheet->WriteString(1, 26, "Email later", $xml_styles['column_names']);
+$sheet->WriteString(1, 27, "Exchange rate	", $xml_styles['column_names']);
+$sheet->WriteString(1, 28, "FOB", $xml_styles['column_names']);
+$sheet->WriteString(1, 29, "Invoice number", $xml_styles['column_names']);
+$sheet->WriteString(1, 30, "Line: Amount", $xml_styles['column_names']);
+$sheet->WriteString(1, 31, "Line: Class", $xml_styles['column_names']);
+$sheet->WriteString(1, 32, "Line: Description	", $xml_styles['column_names']);
+$sheet->WriteString(1, 33, "Line: Inventory bin", $xml_styles['column_names']);
+$sheet->WriteString(1, 34, "Line: Inventory site", $xml_styles['column_names']);
+$sheet->WriteString(1, 35, "Line: Linked SO number", $xml_styles['column_names']);
+$sheet->WriteString(1, 36, "Line: Other 1	", $xml_styles['column_names']);
+$sheet->WriteString(1, 37, "Line: Other 2	", $xml_styles['column_names']);
+$sheet->WriteString(1, 38, "Line: Price", $xml_styles['column_names']);
+$sheet->WriteString(1, 39, "Line: Quantity", $xml_styles['column_names']);
+$sheet->WriteString(1, 40, "Line: Serial/Lot number", $xml_styles['column_names']);
+$sheet->WriteString(1, 41, "Line: Service date", $xml_styles['column_names']);
+$sheet->WriteString(1, 42, "Line: Tax code", $xml_styles['column_names']);
+$sheet->WriteString(1, 43, "Line: U/M	", $xml_styles['column_names']);
+$sheet->WriteString(1, 44, "Linked SO number", $xml_styles['column_names']);
+$sheet->WriteString(1, 45, "Mark as pending", $xml_styles['column_names']);
+$sheet->WriteString(1, 46, "Memo", $xml_styles['column_names']);
+$sheet->WriteString(1, 47, "Other", $xml_styles['column_names']);
+$sheet->WriteString(1, 48, "Print later", $xml_styles['column_names']);
+$sheet->WriteString(1, 49, "PO number	", $xml_styles['column_names']);
+$sheet->WriteString(1, 50, "Sales rep	", $xml_styles['column_names']);
+$sheet->WriteString(1, 51, "Shipping date	", $xml_styles['column_names']);
+$sheet->WriteString(1, 52, "Shipping method", $xml_styles['column_names']);
+$sheet->WriteString(1, 53, "Shipping address: City", $xml_styles['column_names']);
+$sheet->WriteString(1, 54, "Shipping address: Country", $xml_styles['column_names']);
+$sheet->WriteString(1, 55, "Shipping address: Line 1", $xml_styles['column_names']);
+$sheet->WriteString(1, 56, "Shipping address: Line 2", $xml_styles['column_names']);
+$sheet->WriteString(1, 57, "Shipping address: Line 3", $xml_styles['column_names']);
+$sheet->WriteString(1, 58, "Shipping address: Line 4", $xml_styles['column_names']);
+$sheet->WriteString(1, 59, "Shipping address: Line 5", $xml_styles['column_names']);
+$sheet->WriteString(1, 60, "Shipping address: Note", $xml_styles['column_names']);
+$sheet->WriteString(1, 61, "Shipping address: State", $xml_styles['column_names']);
+$sheet->WriteString(1, 62, "Shipping address: Postal code	", $xml_styles['column_names']);
+$sheet->WriteString(1, 63, "Shipping amount", $xml_styles['column_names']);
+$sheet->WriteString(1, 64, "Shipping description", $xml_styles['column_names']);
+$sheet->WriteString(1, 65, "Shipping item	", $xml_styles['column_names']);
+$sheet->WriteString(1, 66, "Shipping tax code	", $xml_styles['column_names']);
+$sheet->WriteString(1, 67, "Tax item", $xml_styles['column_names']);
+$sheet->WriteString(1, 68, "Template", $xml_styles['column_names']);
+$sheet->WriteString(1, 69, "Terms", $xml_styles['column_names']);
+$sheet->WriteString(1, 70, "Transaction date	", $xml_styles['column_names']);
+$sheet->WriteString(1, 71, "Update Invoice", $xml_styles['column_names']);
+$sheet->WriteString(1, 72, "Reservation Type", $xml_styles['column_names']);
+$sheet->WriteString(1, 73, "Department", $xml_styles['column_names']);
+$sheet->WriteString(1, 74, "Check-In", $xml_styles['column_names']);
 $row = 1; // row counter start
 $dataArray = array();
 
@@ -163,7 +165,9 @@ foreach ($data['oti_invoices'] as $invoice_id => $invoice) {
         //Vendor	AP account	Vendor address: City	Vendor address: Country	Vendor address: Line 1
         $dataItem = array(
             'customer' => 'customer',//TBD Vendor
+
             'lineItem' => 'postal code',//TBD
+            '$memoEndUser' => '$memoEndUser',
             'billingAddressCity' => 'due date',//TBD CHECKING DATE Y-m-d h:j:s
             'billingAddressCountry' => 'Country',//Concat Department and office
             'billingAddressLine1' => 'Supplier name',//TBD invoice number plus dash
@@ -175,6 +179,8 @@ foreach ($data['oti_invoices'] as $invoice_id => $invoice) {
             'lineQuantity' => '1',//TBD just 1
             'saleRep' => 'saleRep',//TBD Invoice date
             'transactionDate' => 'transaction date',//TBD Invoice date
+            'reservationType' => 'reservationType',
+            'department' => 'department'
         );
 
         $item = new InvoiceItem($item_id);
@@ -237,6 +243,8 @@ foreach ($data['oti_invoices'] as $invoice_id => $invoice) {
         $clientInfo = $items['guest_info'][0];
         $clientLastName = $clientInfo['guest_last_name'];
         $clientFirstName = $clientInfo['guest_first_name'];
+
+        $memoEndUser = $clientInfo['guest_last_name'] .',' . $clientInfo['guest_first_name'];
 
         switch ($items['reservation_type']) {
             case 'hotel':
@@ -329,18 +337,28 @@ foreach ($data['oti_invoices'] as $invoice_id => $invoice) {
 
         $reservationType = ucwords(str_replace('_',' ',$items['reservation_type']));
         $reservationType .= ' - ';
+
+        $resType = "";
+        $department = "";
+
         if($agentOffice == 'Miami' || $agentOffice == ''){
             if($agentDept == "GROUP"){
                 $agentDept = "Groups";
             }
 
             $reservationType .= $agentDept;
+            $department = $agentDept;
         }else{
             $reservationType .= $agentOffice;
+            $department = $agentOffice;
         }
+
+        $resType = $items['reservation_type'];
+
         $item_retail = ($item_data['rates_data']['total']['rate_retail_after_tax']) * $item_data['request']['units'];
         $dataItem = array(
             'customer' => $agency_info['agency_name'] . ' - ' . $clientFirstName . ' ' . $clientLastName,//TBD Vendor
+            'memoEndUser' => $memoEndUser,
             'lineItem' => $reservationType,//TBD
             'billingAddressCity' => $agency_info['agency_city'],//TBD CHECKING DATE Y-m-d h:j:s
             'billingAddressCountry' => $agency_info['agency_country'],//Concat Department and office
@@ -353,6 +371,9 @@ foreach ($data['oti_invoices'] as $invoice_id => $invoice) {
             'lineQuantity' => '1',//TBD just 1
             'saleRep' => $agentName,//TBD Invoice date
             'transactionDate' => $invDate,//TBD Invoice date
+            'reservationType' => $resType,
+            'department' => $department,
+            'checkIn' => $checkInDate = $items['request']['check_in_date']
         );
         if(strpos($dataItem['invoiceNumber'],'I')=== false){
             $dataArray[] = $dataItem;
@@ -403,7 +424,9 @@ foreach ($dataArray as $dataItem) {
 
      *  */
     $sheet->WriteString($row, 1, $dataItem['customer'], $xml_styles['row_cell']);
+
     $sheet->WriteString($row, 2, $dataItem['lineItem'], $xml_styles['row_cell']);
+    $sheet->WriteString($row, 3, $dataItem['memoEndUser'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 4, $dataItem['billingAddressCity'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 5, $dataItem['billingAddressCountry'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 6, $dataItem['billingAddressLine1'], $xml_styles['row_cell']);
@@ -415,7 +438,9 @@ foreach ($dataArray as $dataItem) {
     $sheet->WriteNumber($row, 38, $dataItem['lineQuantity'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 49, $dataItem['saleRep'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 69, $dataItem['transactionDate'], $xml_styles['row_cell']);
-
+    $sheet->WriteNumber($row, 72, $dataItem['reservationType'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 73, $dataItem['department'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 74, $dataItem['checkIn'], $xml_styles['row_cell']);
 
     unset ($interval_start);
 
@@ -612,8 +637,8 @@ function GetInvoices($search_string, $offset, $limit, $sort_by, $visible_paid_st
             break;
     }
 
-    $query .= "AND inv.creation_date > '2021-05-01'";
-    $query .= "AND inv.creation_date < '2021-06-01'";
+    $query .= "AND inv.creation_date > '2021-01-01'";
+    $query .= "AND inv.creation_date < '2021-06-28'";
 
 
     $query .= "GROUP BY inv.invoice_id ";
