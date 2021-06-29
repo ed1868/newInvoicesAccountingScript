@@ -396,31 +396,19 @@ foreach ($dataArray as $dataItem) {
 
 
     $row++; // row counter
-    $customerSplit =explode("-", $dataItem['customer']);
-    $memo = $customerSplit[1];
     /*
      *
      *
 
 
      *  */
-    $sheet->WriteNumber($row, 1, $dataItem['invoiceNumber'], $xml_styles['row_cell']);
-    $sheet->WriteString($row, 2, $dataItem['customer'], $xml_styles['row_cell']);
-    $sheet->WriteString($row, 3, "InvoiceDate", $xml_styles['row_cell']);
-    $sheet->WriteNumber($row, 4, $dataItem['dueDate'], $xml_styles['row_cell']);
-
-
-    $sheet->WriteNumber($row, 5, $dataItem['billingAddressCity'], $xml_styles['row_cell']);
-    $sheet->WriteNumber($row, 6, $dataItem['billingAddressCountry'], $xml_styles['row_cell']);
-    $sheet->WriteNumber($row, 7, $dataItem['billingAddressLine1'], $xml_styles['row_cell']);
-    $sheet->WriteNumber($row, 8, $dataItem['billingAddressPostalCode'], $xml_styles['row_cell']);
-
-
-    $sheet->WriteNumber($row, 9,$memo,$xml_styles['row_cell']);
-    $sheet->WriteString($row, 10, $dataItem['lineItem'], $xml_styles['row_cell']);
-
-
-
+    $sheet->WriteString($row, 1, $dataItem['customer'], $xml_styles['row_cell']);
+    $sheet->WriteString($row, 2, $dataItem['lineItem'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 4, $dataItem['billingAddressCity'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 5, $dataItem['billingAddressCountry'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 6, $dataItem['billingAddressLine1'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 13, $dataItem['billingAddressPostalCode'], $xml_styles['row_cell']);
+    $sheet->WriteNumber($row, 24, $dataItem['dueDate'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 28, $dataItem['invoiceNumber'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 31, $dataItem['lineDescription'], $xml_styles['row_cell']);
     $sheet->WriteNumber($row, 37, $dataItem['linePrice'], $xml_styles['row_cell']);
@@ -624,8 +612,8 @@ function GetInvoices($search_string, $offset, $limit, $sort_by, $visible_paid_st
             break;
     }
 
-    $query .= "AND inv.creation_date > '2021-06-01'";
-    $query .= "AND inv.creation_date < '2021-06-23'";
+    $query .= "AND inv.creation_date > '2021-05-01'";
+    $query .= "AND inv.creation_date < '2021-06-01'";
 
 
     $query .= "GROUP BY inv.invoice_id ";
